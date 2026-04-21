@@ -1,0 +1,24 @@
+package com.example.qa.arrays;
+
+//Question
+//reverse an array. (Need studying and explanation more)
+
+public class ReverseArray {
+
+    public static void main(String[] args){
+
+        int[] arr = {1, 2, 3, 4, 5};
+
+        for (int i = 0; i < arr.length / 2; i++) {
+            int temp = arr[i];
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - 1 - i] = temp;
+        }
+
+        // Print result
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+
+    }
+}
