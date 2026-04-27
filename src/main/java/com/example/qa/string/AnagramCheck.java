@@ -7,8 +7,11 @@ import java.util.Arrays;
 public class AnagramCheck {
 
     public static void main(String[] args){
-        String s1 = "listen";
-        String s2 = "silent";
+        String s1 = "Listen";
+        String s2 = "Silent";
+
+        s1=s1.toLowerCase();
+        s2=s2.toLowerCase();
 
         char[] a=s1.toCharArray();
         char[] b=s2.toCharArray();
@@ -17,9 +20,9 @@ public class AnagramCheck {
         Arrays.sort(b);
 
         if(Arrays.equals(a,b)){
-           System.out.println("Anagram");
+            System.out.println("Anagram");
         }else{
-           System.out.println("Not Anagram");
+            System.out.println("Not Anagram");
         }
     }
 }
